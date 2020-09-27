@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Xuanrui Qi">
+    <title>Coq/SSR Algebraic Geometry</title>
+    <link href="https://www.xuanruiqi.com/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark fixed-top bg-primary flex-md-nowrap p-0">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8 ml-sm-auto ml-md-auto px-4">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Coq/SSReflect Algebraic Geometry</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <main role="main" class="col-lg-10 ml-sm-auto ml-md-auto px-4">
+                <div class="justify-content-between align-items-center pt-4 border-bottom">
+                    <h2 class="title" id="intro">Algebraic Geometry in Coq</h2>
+                    <p>
+                        Welcome to the homepage of the Coq algebraic geometry project. Small algebraic geometric developments have been 
+                        done in Coq many times, but as far as we know there has been no bottom-up development of modern (Grothendieck-style)
+                        algebraic geometry in Coq. This project is intended to fill this gap, and also to demonstrate that Coq and SSReflect/MathComp 
+                        is capable of handling high-level, abstract mathematics, in addition to low-level, concrete mathematics which it is well-known
+                        to be able to handle well.
+                    </p>
+                    <p>
+                        This project is in many ways inspired by the <a href="https://stacks.math.columbia.edu/">Stacks Project</a>, in that we
+                        also start with few preliminaries and build up the tools necessary to develop algebraic geometry step-by-step; it is 
+                        also motivated in part by Lean's <a href="https://github.com/leanprover-community/mathlib">Mathlib</a>. We take as 
+                        granted Coq's expressive Gallina specification language, the SSReflect proof language and the Coq <a href="https://math-comp.github.io/">
+                        Mathematical Components</a> library, and formalize the required stepping stones towards algebraic geometry. We do not 
+                        necessarily follow the Stacks Project in our formalization, but like the Stacks Project, we aim to build a coherent library of 
+                        related mathematics along our way. Eventually, however, this project would not necessarily be limited to algebraic geometry:
+                        we are also interested in expanding in other related directions, such as homological algebra and topos theory.
+                    </p>
+                </div>
+
+                <div class="justify-content-between mt-2 pt-1 border-bottom">
+                    <h3 class="title" id="short">Current &amp; planned developments</h3>
+                    <p>
+                        Currently, our main goal is to define the notion of an affine scheme, i.e. a locally ringed space 
+                        isomorphic to the spectrum of a commutative ring with unit. This requires a bit of category theory and commutative algebra, as well 
+                        as some sheaf theory.
+                    </p>
+                    <ul>
+                        <li><a href="https://github.com/xuanruiqi/categories">Category theory</a>
+                            <br>(main reference: Emily Riehl, <a href="http://www.math.jhu.edu/~eriehl/context.pdf"><i>Category Theory in Context</i></a>)
+                        </li>
+                        <li>Commutative algebra
+                            <br>(main reference: David Eisenbud, <i>Commutative Algebra with A View Towards Algebraic Geometry</i>, GTM 150)
+                        </li>
+                        <li><p style="color:gray"><i>Basic scheme theory</i>
+                            <br>(main reference: David Eisenbud and Joe Harris, <i>The Geometry of Schemes</i>, GTM 197)</p> 
+                        </li>
+                    </ul>
+                    <p>
+                        Besides the main reference text listed under each item, we also refer frequently to the Stacks Project, and to 
+                        Robin Hartshorne's <i>Algebraic Geometry</i>.
+                    </p>
+                </div>
+
+                <div class="justify-content-between mt-2 pt-1 border-bottom">
+                    <h3 class="title" id="short">Note</h3>
+                    <p>
+                        We intend to do a formalization of "textbook" algebraic geometry, which relies heavily on non-constructive reasoning principles 
+                        (especially the Axiom of Choice). Therefore, we always assume functional and proof extensionality, decidable equality 
+                        for every type, and the type-theoretic Axiom of Choice in our development.
+                    </p>
+                </div>
+
+                <div class="justify-content-between mt-2 pt-1">
+                    <h3 class="title" id="short">People</h3>
+                    <p>Currently, <a href="https://www.xuanruiqi.com">Xuanrui Qi</a> is the only person working on this project.
+                    We would love to have some collaborators, especially those who are experienced in using SSReflect/MathComp to formalize 
+                    mathematics, and those who have some expertise in algebraic geometry.    
+                    </p>
+                    <p>Many people have given their valuable advice and support:
+                        <ul>
+                            <li>Reynald Affeldt (National Institute of Advanced Industrial Science and Technology, Japan)</li>
+                            <li>Takafumi Saikawa (Nagoya University, Japan)</li>
+                            <li>David Nowak (CNRS &amp; University of Lille, France)</li>
+                            <li>Jacques Garrigue (Nagoya University, Japan).</li>
+                        </ul>
+                    </p> 
+                </div>
+            </main>
+
+            <div class="col-lg-1 col-md-0 col-sm-0"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        feather.replace();
+    </script>
+    <script src="https://www.xuanruiqi.com/index.js"></script>
+</body>
+
+</html>
