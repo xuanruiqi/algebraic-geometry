@@ -33,7 +33,7 @@
                         Welcome to the homepage of the Coq algebraic geometry project. Small algebraic geometric developments have been 
                         done in Coq many times, but as far as we know there has been no bottom-up development of modern (Grothendieck-style)
                         algebraic geometry in Coq. This project is intended to fill this gap, and also to demonstrate that Coq and SSReflect/MathComp 
-                        is capable of handling high-level, abstract mathematics, in addition to low-level, concrete mathematics which it is well-known
+                        are capable of handling high-level, abstract mathematics, in addition to low-level, concrete mathematics which it is well-known
                         to be able to handle well.
                     </p>
                     <p>
@@ -55,29 +55,26 @@
                         isomorphic to the spectrum of a commutative ring with unit. This requires a bit of category theory and commutative algebra, as well 
                         as some sheaf theory.
                     </p>
-                    <ul>
-                        <li><a href="https://github.com/xuanruiqi/categories">Category theory</a>
-                            <br>(main reference: Emily Riehl, <a href="http://www.math.jhu.edu/~eriehl/context.pdf"><i>Category Theory in Context</i></a>)
-                        </li>
-                        <li>Commutative algebra
-                            <br>(main reference: David Eisenbud, <i>Commutative Algebra with A View Towards Algebraic Geometry</i>, GTM 150)
-                        </li>
-                        <li><p style="color:gray"><i>Basic scheme theory</i>
-                            <br>(main reference: David Eisenbud and Joe Harris, <i>The Geometry of Schemes</i>, GTM 197)</p> 
-                        </li>
-                    </ul>
                     <p>
-                        Besides the main reference text listed under each item, we also refer frequently to the Stacks Project, and to 
-                        Robin Hartshorne's <i>Algebraic Geometry</i>.
+                        Our current formaliation roadmap is:
+                        <ul>
+                            <li><a href="https://github.com/xuanruiqi/categories">category theory</a>;
+                            </li>
+                            <li><a href="https://github.com/xuanruiqi/commalg">commutative algebra</a>;
+                            </li>
+                            <li><span style="color:gray">basic scheme theory</span>.
+                            </li>
+                        </ul>
                     </p>
                 </div>
 
                 <div class="justify-content-between mt-2 pt-1 border-bottom">
                     <h3 class="title" id="short">Note</h3>
                     <p>
-                        We intend to do a formalization of "textbook" algebraic geometry, which relies heavily on non-constructive reasoning principles 
-                        (especially the Axiom of Choice). Therefore, we always assume functional and proof extensionality, decidable equality 
-                        for every type, and the type-theoretic Axiom of Choice in our development.
+                        We intend to do a formalization of "textbook" algebraic geometry (as in Grothendieck's EGA
+                        or the Stacks Project), which relies heavily on non-constructive reasoning principles 
+                        (especially the Axiom of Choice). Therefore, we always assume functional and proof extensionality, decidability of every proposition, 
+                        and the (type-theoretic) Axiom of Choice in our development.
                     </p>
                 </div>
 
