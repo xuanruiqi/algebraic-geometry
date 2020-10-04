@@ -1,0 +1,8 @@
+-arg -w -arg -notation-overridden
+-arg -w -arg -ambiguous-paths
+-arg -w -arg -notation-incompatible-format
+-arg -w -arg -projection-no-head-constant
+
+sheaves.v
+
+-R . algebraic-geometry

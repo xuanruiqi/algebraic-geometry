@@ -1,0 +1,6 @@
+[submodule "categories"]
+	path = categories
+	url = ./categories
+[submodule "commalg"]
+	path = commalg
+	url = ./commalg
